@@ -1,0 +1,87 @@
+
+h1 {
+    color: #2d348a;
+    font-family: "Franklin Gothic Demi";
+    text-align: center;
+    font-size: xxx-large;
+
+}
+
+h2 {
+    color: rgba(93, 178, 222, 0.61);
+    font-family: "Franklin Gothic Demi";
+    text-align: center;
+    font-size: x-large;
+}
+
+h3 {
+    margin-left: 6%;
+    color: #373c88;
+    font-family: "Franklin Gothic Demi";
+    font-size: x-large;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 5px solid blue;
+}
+.bajerBox {
+    margin-left: 5%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 0.5em;
+}
+
+.imgBajerBox {
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+
+}
+
+.card-title {
+    text-align: center;
+    font-size: 24px;
+}
+
+
+/* Outline Out */
+.hvr-outline-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    border-radius: 0.5em;
+}
+.hvr-outline-out:before {
+    content: '';
+    position: absolute;
+    border: #0d6dfc solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+    border-radius: 0.5em;
+}
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+    top: -8px;
+    right: -8px;
+    bottom: -8px;
+    left: -8px;
+    border-radius: 0.5em;
+}
