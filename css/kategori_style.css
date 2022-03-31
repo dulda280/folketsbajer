@@ -1,7 +1,7 @@
 
 h1 {
     color: #2d348a;
-    font-family: "Franklin Gothic Demi";
+    font-family: "Montserrat";
     text-align: center;
     font-size: xxx-large;
 
@@ -9,7 +9,7 @@ h1 {
 
 h2 {
     color: rgba(93, 178, 222, 0.61);
-    font-family: "Franklin Gothic Demi";
+    font-family: "Montserrat";
     text-align: center;
     font-size: x-large;
 }
@@ -33,18 +33,31 @@ hr {
     margin-right: 5%;
     border-top: 5px solid blue;
 }
-.bajerBox {
-    margin-left: 5%;
+
+.bajerBoxDiv {
+    width: 18em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 0.5em;
+    margin-right: 1%;
+
 }
 
-.imgBajerBox {
-    height: 50%;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 10%;
-    margin-bottom: 3%;
+.bajerBoxImgDiv {
+    width: 8em;
+    height: 14em;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgBajerBox{
+    width: 8em;
+    height: 14em;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -84,4 +97,10 @@ hr {
     bottom: -8px;
     left: -8px;
     border-radius: 0.5em;
+}
+
+.bajerCategoryDiv{
+    margin-bottom: 1%;
+    margin-left: 5em;
+
 }
