@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4fd5f67a-98c8-45b8-bf04-38b518d3a12d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/css/kategori_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/kategori_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/kategori_a.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/kategori_a.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/css/index_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +54,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646912582243</updated>
+<<<<<<< Updated upstream
       <workItem from="1646912583745" duration="10379000" />
+=======
+      <workItem from="1646912583745" duration="1503000" />
+      <workItem from="1648729995643" duration="6806000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
