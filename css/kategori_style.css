@@ -46,13 +46,6 @@ hr {
 
 }
 
-.bajerBoxImgDiv {
-    width: 8em;
-    height: 14em;
-    align-items: center;
-    justify-content: center;
-
-}
 .imgBajerBox{
     width: 8em;
     height: 14em;
@@ -103,4 +96,12 @@ hr {
     margin-bottom: 1%;
     margin-left: 5em;
 
+}
+.btn{
+    text-align: center;
+}
+.votingdiv{
+    
+    
+    margin-left: 25%; width: 50%
 }
