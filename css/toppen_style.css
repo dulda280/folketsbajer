@@ -3,6 +3,7 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     font-family: 'Montserrat';
+    color: white;
 }
 
 .navbar-brand {
