@@ -1,0 +1,19 @@
+.navbar-brand {
+    font-weight: bold;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.white-color {
+    color: white !important;
+}
+
+body {
+    background-color: white;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+    color: black;
+}

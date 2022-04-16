@@ -10,8 +10,12 @@ body {
     font-weight: bold;
 }
 
+.active {
+    font-weight: bold;
+}
+
 .white-color {
-    color: white;
+    color: white !important;
 }
 
 .navbar-buttons>.button:not(:last-child){
