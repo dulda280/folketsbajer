@@ -1,4 +1,5 @@
 <?php
+
 // Initialize the session
 session_start();
 
@@ -25,11 +26,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2D348A">
     <div class="container-fluid">
         <a class="navbar-brand" style="color: white" href="#">Folkets Bajer</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" style="color: white" href="../html/index.html">Forside</a>
                 </li>
@@ -51,13 +52,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <li class="nav-item">
                     <a class="nav-link" style="color: white" href="../html/om_os.html">Om Os</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" style="color: white" href="#">Profile: Name of Profile</a>
-                </li>
             </ul>
+            <form class="d-flex">
+                <a class="nav-link white-color btn-outline-primary active" href="#"><?php echo $_SESSION['username']; ?></a>
+            </form>
         </div>
     </div>
 </nav>
 
 </body>
 </html>
+
