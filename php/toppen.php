@@ -14,6 +14,7 @@
 </head>
 <body>
 
+<?php include_once("../page-predefines/navbar.php");?>
 <?php include_once("../modules/toppen-content.php");?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
