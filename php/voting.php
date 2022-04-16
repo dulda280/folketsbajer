@@ -21,6 +21,11 @@
     //Run it back
     $rs = mysqli_query($con, $sql)
     
-   
 ?>
 
+
+<html lang="en">
+    <head>
+        <meta http-equiv="refresh" content="1; URL=../html/kategori_a.html" />
+    </head>
+</html>
