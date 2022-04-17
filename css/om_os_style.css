@@ -17,3 +17,14 @@ body {
     font-family: 'Montserrat';
     color: black;
 }
+
+.login-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title {
+    color: white;
+    margin-right: 1em;
+}
