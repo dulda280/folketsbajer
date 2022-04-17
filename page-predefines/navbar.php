@@ -1,17 +1,16 @@
 <?php
 
-
-
 function PageName() {
     return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
 }
 
 $current_page = PageName();
+
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2D348A">
     <div class="container-fluid">
-        <a class="navbar-brand" style="color: white" href="#">Folkets Bajer</a>
+        <a class="navbar-brand" style="color: white" href="../php/index.php">Folkets Bajer</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -44,10 +43,10 @@ $current_page = PageName();
                 <?php
                 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
                     echo '<div class="login-title-container"><span class="login-title">Logged in as:</span></div>';
-                    echo '<a class="nav-link white-color btn btn-outline-primary active" href="#">' . $_SESSION['username'] . '</a>';
+                    echo '<a class="nav-link white-color btn btn-outline-primary active" href="../php/welcome.php">' . $_SESSION['username'] . '</a>';
                 } else {
-                    echo '<a class="nav-link white-color btn btn-outline-primary " href="../php/register.php">Sign Up</a>';
-                    echo '<a class="nav-link white-color btn btn-outline-primary " href="../php/login.php">Login</a>';
+                    echo '<a class="nav-link white-color btn btn-outline-primary" href="../php/register.php">Sign Up</a>';
+                    echo '<a class="nav-link white-color btn btn-outline-primary" href="../php/login.php">Login</a>';
                 }
                 ?>
             </form>
