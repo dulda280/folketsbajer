@@ -1,7 +1,6 @@
 <?php
     //Connect to database;
     $con = mysqli_connect("localhost", "root", "", "folketsbajer_database");
-
     //Check connection
     if (mysqli_connect_errno())
     {
@@ -11,16 +10,13 @@
         echo '<p>Connection to MySQL database successfully established.</p>';
     }
     // Get POST records from HTML form
-    //$voteID = $_POST['votingModalFestival'] <-- indsæt i stedet for '0' i $sql
-    $voteValue = $_POST['voteBajer'];
-    
+    //$voteID = $_POST['votingModalFestival']; //<-- indsæt i stedet for '0' i $sql
+    $voteValue = $_POST['voteFestival'];
     //Insert data into database with sql code:
-    $sql = "INSERT INTO voting_bajer (id, votevalue)
+    $sql = "INSERT INTO voting_festival (id, votevalue)
     VALUES('0', '$voteValue');";
-    
     //Run it back
     $rs = mysqli_query($con, $sql)
-    
 ?>
 
 
