@@ -61,6 +61,7 @@
                         <div class="cardTextDiv">
                             <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
                             <div class="votingdiv">
+                        
                                 <!-- Button trigger modal -->
                                     <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival">
                                     Stem her!
