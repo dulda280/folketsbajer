@@ -24,16 +24,10 @@ html {
 }
 
 .card-img-top {
-    width: 7em;
-    height: 12em;
+    width: 7rem;
+    height: 12rem;
     justify-content: center;
     align-items: center;
-}
-
-.card {
-    padding: 1em;
-    width: 18em;
-
 }
 
 .rating-score-title {
@@ -60,24 +54,21 @@ html {
     margin: 1em;
 }
 
+.rating-score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .rating-star {
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
     color: white;
 }
 
-.rating-container {
-    display: block;
-}
-
-.rating-score {
-    display: flex;
-    justify-content: end;
-}
-
 .rating-title {
-    justify-content: start;
-    margin-right: .2em;
+    font-size: 1.5rem;
 }
 
 .login-title-container {
@@ -114,7 +105,7 @@ html {
 }
 
 .card {
-    background-color: #f3f3f3;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -127,9 +118,10 @@ html {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 14em;
-    height: 6em;
+    width: 100%;
+    height: 6rem;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
 }
 
 /* This container is needed to position the front and back side */
@@ -159,7 +151,7 @@ html {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    background-color: #f3f3f3;
+    background-color: #e7e7e7;
     color: black;
     text-align: center;
     position: absolute;
@@ -169,13 +161,17 @@ html {
 
 /* Style the back side */
 .flip-card-back {
-    background-color: #f3f3f3;
+    background-color: white;
     color: black;
     transform: rotateY(180deg);
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #sum-number-index {
-    margin-top: .5em;
+    margin-top: .4em;
+    font-size: 2rem;
 }
 
 /* Shutter In Vertical */
@@ -198,7 +194,7 @@ html {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #f3f3f3;
+    background: #dedede;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -217,4 +213,82 @@ html {
 .hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
+}
+
+.card-container {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+.card {
+    display: grid;
+}
+.card .button {
+    align-self: end;
+}
+
+/* Simple Card styles for prettying */
+
+.beer_description {
+    font-size: 1.5rem;
+}
+
+.beer_title {
+    font-size: 1.5rem;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display:block;
+    margin:auto;
+}
+
+.image-container {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display:block;
+    margin:auto;
+}
+
+.card_thumbnail {
+    height: 35%;
+    width: 55%;
+}
+
+.card {
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+    padding: 1rem;
+}
+
+.card__title {
+    font-weight: b  old;
+    font-size: 2.5rem;
+    padding: .5rem;
+}
+.card__description {
+    padding: .5rem;
+    line-height: 1.6em;
+}
+
+.button {
+    display: block;
+    background-color: tomato;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s ease-out;
+}
+:hover {
+     background-color: darken(tomato, 10%);
+ }
+
+
+img {
+    max-width: 100%;
 }
