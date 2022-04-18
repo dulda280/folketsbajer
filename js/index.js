@@ -56,5 +56,15 @@ function showSlides() {
     setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
 
+function switchPage() {
+    window.location = '../html/kategori_a.html';
+}
+
+$(document).ready(function() {
+    $('div.overlay').click(function(){
+        window.location.href = this.id + '.html';
+    });
+});
+
 
 

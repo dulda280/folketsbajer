@@ -98,6 +98,117 @@ body {
     transition: background-color 0.6s ease;
 }
 
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fadePic1 {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    left: 452px;
+    top: 25px;
+}
+
+.fadePic2 {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    left: 497px;
+    top: 25px;
+}
+
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #555;
+}
+
+.overlay{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #f5f5f5;
+}
+
+.fadePic1:hover .overlay{
+    opacity: 1;
+}
+
+.fadePic2:hover .overlay{
+    opacity: 1;
+}
+
+.billedTekst1{
+    font-size: 22.5px;
+    color: black;
+    font-family: SansSerif, Verdana;
+    font-weight: lighter;
+    position: relative;
+    left: 580px;
+    top: 25px;
+}
+
+.billedTekst3{
+    font-size: 22.5px;
+    color: black;
+    font-family: SansSerif, Verdana;
+    position: relative;
+    left: 475px;
+    top: 25px;
+}
+
+.billedTekst4{
+    font-size: 22.5px;
+    color: black;
+    font-family: SansSerif, Verdana;
+    font-weight: lighter;
+    position: relative;
+    left: 510px;
+    top: 20px;
+}
+
+.billedTekst2{
+    font-size: 22.5px;
+    color: black;
+    font-family: SansSerif, Verdana;
+    position: relative;
+    left: 465px;
+    top: 20px;
+}
+
+.first {
+    width: 525px;
+    float:left; /* add this */
+
+}
+.second {
+    height: 90px;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+
+}
+
+.hovertext {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
