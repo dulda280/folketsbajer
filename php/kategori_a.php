@@ -1,9 +1,12 @@
 
 <?php
     session_start();
-    $tempID = "";
+   
+    if(isset($_POST['CTOPfestival'])){
+        $tempID = $_POST['CTOPfestival'];
+        $_SESSION['temp'] = $tempID;
+    }
     
-
 ?>
 
 <!doctype html>
@@ -17,6 +20,7 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/kategori_style.css">
+        
 
         <title>Folketsbajer: Bedste Pilsner</title>
     </head>
@@ -61,11 +65,12 @@
                         <div class="cardTextDiv">
                             <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
                             <div class="votingdiv">
-                        
+                                <form method="post">
                                 <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival">
+                                    <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival" name="CTOPfestival" value="Ceres Top" >
                                     Stem her!
                                     </button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -130,7 +135,7 @@
                                     <input type="radio" id="4star" name="voteFestival" value="4">
                                     <label for="4star">4 stjerner</label>
                                     <input type="radio" id="5star" name="voteFestival" value="5">
-                                    <label for="5star">5 stjerne</label>
+                                    <label for="5star">5 stjerner</label>
                                     
                                     <div class="submitVote" style="text-align: center; padding-top: 2em;">
                                         <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary" style="align-items: center;">
@@ -190,7 +195,7 @@
                                     <input type="radio" id="4star" name="voteForfest" value="4">
                                     <label for="4star">4 stjerner</label>
                                     <input type="radio" id="5star" name="voteForfest" value="5">
-                                    <label for="5star">5 stjerne</label>
+                                    <label for="5star">5 stjerner</label>
                                     
                                     <div class="submitVote" style="text-align: center; padding-top: 2em;">
                                         <input type="submit" name="Submit" id="Submit" value="Submit" class="btn btn-primary" style="align-items: center;">
@@ -206,6 +211,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
 
     </body>
 </html>
