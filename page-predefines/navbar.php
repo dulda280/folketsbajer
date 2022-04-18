@@ -22,17 +22,8 @@ $current_page = PageName();
                 <li class="nav-item">
                     <a class="<?php echo $current_page == 'toppen.php' ? 'nav-link active': 'nav-link' ?>" style="color: white" href="../php/toppen.php">Toppen</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" style="color: white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Øl Kategorier
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="../html/kategori_a.html">Bedste Pilsner</a></li>
-                        <li><a class="dropdown-item" href="#">Bedste Festivalsbajer</a></li>
-                        <li><a class="dropdown-item" href="#">Bedste xyz</a></li>
-                        <li><a class="dropdown-item" href="#">Bedste xyz</a></li>
-                        <li><a class="dropdown-item" href="#">Bedste xyz</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="<?php echo $current_page == 'kategori_a.php' ? 'nav-link active': 'nav-link' ?>" style="color: white" href="../php/kategori_a.php">Øl kategorier</a>
                 </li>
                 <li class="nav-item">
                     <a class="<?php echo $current_page == 'om_os.php' ? 'nav-link active': 'nav-link' ?>" style="color: white" href="../php/om_os.php">Om Os</a>
