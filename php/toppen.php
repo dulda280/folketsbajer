@@ -135,6 +135,35 @@
             </div>
         </div>
     </article>
+    <article class="card">
+        <h3 class="card__title center">Tuborg Classic</h3>
+        <br>
+        <div class="image-container">
+            <img class="card_thumbnail" src="../pics/tbclas.jpg">
+        </div>
+        <br>
+        <main class="card__description">
+            <p class="beer_description center">Dette er en meget fin tuborg classic i en endnu finere grøn dåse</p>
+        </main>
+        <br>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front hvr-shutter-in-vertical">
+                    <h1 id="sum-number-index">3.8<img src="../pics/star-filled.png" style="width: 15%;height: 15%;margin-bottom: .3em;margin-left: .2em" class="rating-star" alt=""></h1>
+                </div>
+                <div class="flip-card-back">
+                    <div class="rating-score">
+                        <h5 class="rating-title" id="rating-title-x">Smag</h5>
+                        <img src="../pics/star-filled.png" class="rating-star" alt="">
+                        <img src="../pics/star-filled.png" class="rating-star" alt="">
+                        <img src="../pics/star-filled.png" class="rating-star" alt="">
+                        <img src="../pics/star-filled.png" class="rating-star" alt="">
+                        <img src="../pics/star-unfilled.png" class="rating-star" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 </section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
