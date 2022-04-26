@@ -1,13 +1,24 @@
 
 <?php
-    session_start();
-   
-    if(isset($_POST['CTOPfestival'])){
-        $tempID = $_POST['CTOPfestival'];
-        $_SESSION['temp'] = $tempID;
+    function debug_to_console($data) {
+        $output = $data;
+        if (is_array($output))
+            $output = implode(',', $output);
+
+        echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
     }
-    
+    $hej = 5;
+    session_start();
+    if(isset($hej)){
+        $variable = $_REQUEST['variable'];
+        //$_SESSION['temp'] = $_POST['CTOPfestival'];
+        $_SESSION['temp'] = $variable;
+        echo $variable;
+        debug_to_console("hej");
+    }
+
 ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -67,7 +78,7 @@
                             <div class="votingdiv">
                                 <form method="post">
                                 <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival" name="CTOPfestival" value="Ceres Top" >
+                                    <button onclick="setValue('yoyoman')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival" name="CTOPfestival" id="CTOPID" value="Ceres Top" >
                                     Stem her!
                                     </button>
                                 </form>
@@ -208,7 +219,13 @@
 
             </div>
         </div>
-
+        <script>
+            function setValue(variable){
+                xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET","kategori_a.php?variable="+variable, true);
+                xmlhttp.send();
+            }
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
