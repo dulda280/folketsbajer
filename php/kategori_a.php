@@ -177,6 +177,46 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="bajerBoxDiv" id="bbox2Kat2" name="tbpilsnerFestival" value="tbPilsner">
+                    <div class="bajerBoxImgDiv text-center">
+                        <img src="../pics/tbpil.jpg" class="imgBajerBox" alt="ceresTop">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardHeaderDiv">
+                            <h5 class="card-title">Tuborg Pilsner</h5>
+                        </div>
+                        <div class="cardTextDiv">
+                            <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
+                            <div class="votingdiv">
+                                <!-- Button trigger modal -->
+                                    <button onclick="setValue('Tuborg Pilsner')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalForfest">
+                                    Stem her!
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bajerBoxDiv" id="bbox3Kat3" name="tbClassicFestival" value="tbClassic">
+                    <div class="bajerBoxImgDiv text-center">
+                        <img src="../pics/tbclas.jpg" class="imgBajerBox" alt="ceresTop">
+                    </div>
+                    <div class="card-body">
+                        <div class="cardHeaderDiv">
+                            <h5 class="card-title">Tuborg Classic</h5>
+                        </div>
+                        <div class="cardTextDiv">
+                            <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
+                            <div class="votingdiv">
+                                <!-- Button trigger modal -->
+                                    <button onclick="setValue('Tuborg Classic')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalForfest">
+                                    Stem her!
+                                    </button>
+                                </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Modal -->
                 <div class="modal fade" id="votingModalForfest" name="votingModalForfest" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog">

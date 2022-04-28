@@ -23,6 +23,6 @@
 
 <html lang="en">
     <head>
-        <meta http-equiv="refresh" content="2; URL=../php/kategori_a.php" />
+        <meta http-equiv="refresh" content="0; URL=../php/kategori_a.php" />
     </head>
 </html>

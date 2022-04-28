@@ -290,7 +290,7 @@ html {
      background-color: darken(tomato, 10%);
  }
 
-
-img {
-    max-width: 100%;
+.card_thumbnail{
+    width: 10rem;
+    height: 16rem;
 }

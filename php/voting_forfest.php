@@ -1,6 +1,5 @@
 <?php
-
-    session_start()
+    session_start();
     //Connect to database;
     $con = mysqli_connect("localhost", "root", "", "folketsbajer_database");
     //Check connection
@@ -24,6 +23,6 @@
 
 <html lang="en">
     <head>
-        <meta http-equiv="refresh" content="2; URL=../php/kategori_a.php" />
+        <meta http-equiv="refresh" content="0; URL=../php/kategori_a.php" />
     </head>
 </html>

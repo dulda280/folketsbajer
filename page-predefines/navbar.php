@@ -25,9 +25,6 @@ $current_page = PageName();
                 <li class="nav-item">
                     <a class="<?php echo $current_page == 'kategori_a.php' ? 'nav-link active': 'nav-link' ?>" style="color: white" href="../php/kategori_a.php">Øl kategorier</a>
                 </li>
-                <li class="nav-item">
-                    <a class="<?php echo $current_page == 'om_os.php' ? 'nav-link active': 'nav-link' ?>" style="color: white" href="../php/om_os.php">Om Os</a>
-                </li>
             </ul>
 
             <form class="d-flex">
