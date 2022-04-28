@@ -54,7 +54,7 @@
 
 <div class = "fadePic2">
     <img src="../pics/bestbeer.png" alt="Avatar" class="image" id="bestBeerPic">
-    <div class="overlay" onclick="switchPage()">
+    <div class="overlay" onclick="switchPageTop()">
         <div class="hovertext">Tryk her for at browse de bedste brugeranmeldte øl!</div>
     </div>
 </div>

@@ -60,6 +60,10 @@ function switchPage() {
     window.location = '../php/kategori_a.php';
 }
 
+function switchPageTop() {
+    window.location = '../php/toppen.php';
+}
+
 $(document).ready(function() {
     $('div.overlay').click(function(){
         window.location.href = this.id + '.php';
