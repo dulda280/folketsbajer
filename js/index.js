@@ -13,10 +13,10 @@ function plusSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" slideShow1active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " slideShow1active";
 
 }
 
@@ -31,10 +31,10 @@ function currentSlide(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" slideShow1active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " slideShow1active";
 
 }
 
@@ -49,20 +49,20 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" slideShow1active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " slideShow1active";
     setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
 
 function switchPage() {
-    window.location = '../html/kategori_a.html';
+    window.location = '../php/kategori_a.php';
 }
 
 $(document).ready(function() {
     $('div.overlay').click(function(){
-        window.location.href = this.id + '.html';
+        window.location.href = this.id + '.php';
     });
 });
 

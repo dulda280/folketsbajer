@@ -98,7 +98,7 @@ body {
     transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.slideShow1active, .dot:hover {
     background-color: #717171;
 }
 

@@ -1,20 +1,10 @@
 
 <?php
-    function debug_to_console($data) {
-        $output = $data;
-        if (is_array($output))
-            $output = implode(',', $output);
-
-        echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-    }
-    $hej = 5;
     session_start();
-    if(isset($hej)){
+
+    if (isset($_REQUEST['variable'])){
         $variable = $_REQUEST['variable'];
-        //$_SESSION['temp'] = $_POST['CTOPfestival'];
         $_SESSION['temp'] = $variable;
-        echo $variable;
-        debug_to_console("hej");
     }
 
 ?>
@@ -78,7 +68,7 @@
                             <div class="votingdiv">
                                 <form method="post">
                                 <!-- Button trigger modal -->
-                                    <button onclick="setValue('yoyoman')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival" name="CTOPfestival" id="CTOPID" value="Ceres Top" >
+                                    <button onclick="setValue('Ceres Top')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival" name="CTOPfestival" id="CTOPID" value="Ceres Top" >
                                     Stem her!
                                     </button>
                                 </form>
@@ -99,7 +89,7 @@
                             <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
                             <div class="votingdiv">
                                 <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival">
+                                    <button onclick="setValue('Tuborg Pilsner')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival">
                                     Stem her!
                                     </button>
                             </div>
@@ -119,7 +109,7 @@
                             <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
                             <div class="votingdiv">
                                 <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival">
+                                    <button onclick="setValue('Tuborg Classic')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalFestival">
                                     Stem her!
                                     </button>
                                 </div>
@@ -178,7 +168,7 @@
                             <p class="card-text">Den lokale klassiker fra Aarhus er en favorit blandt mange Øst-Jyder... men kan den bundes ved stuetemperatur? Stem nu!</p>
                             <div class="votingdiv">
                             <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalForfest">
+                                <button onclick="setValue('Ceres Top')" type="button" class="btn btn-primary hvr-outline-out" data-bs-toggle="modal" data-bs-target="#votingModalForfest">
                                 Stem her!
                                 </button>
                             </div>
