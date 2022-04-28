@@ -1,3 +1,6 @@
+
+USE `folketsbajer_database`;
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE users (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(50) NOT NULL UNIQUE,
